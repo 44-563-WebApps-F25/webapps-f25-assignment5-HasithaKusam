@@ -5,4 +5,4 @@
 This project is a Bootstrap practice site that includes images, button groups, dropdowns, navbar, and a form. 
 
 ## GitHub Pages Link  <br>
-[View the site here](https://44-563-webapps-f25.github.io/webapps-f25-assignment5-HasithaKusam/)
+[View the site here](https://44-563-webapps-f25.github.io/webapps-f25-assignment5-HasithaKusam/plant.html)
