@@ -3,187 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pick a Plant by Hasitha Kusam</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <title>Pick a Plant by HASITHAKUSAM</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="p-3">
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a class="navbar-brand" href="plant.html">Plant Options</a>
+<body>
 
-  <!-- Toggler button for small screens -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <!--  Navbar (Part 8) -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="plant.html">Plant Options</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="plant.html">Plants <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="basic.html">Basic</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="advanced.html">Advanced</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-  <h1 class="mb-4">Pick a plant by Hasitha Kusam</h1>
-
-  <div class="container">
+  <!-- Plant Images (Part 4) -->
+  <div class="container my-4">
+    <h2>Plant Gallery</h2>
     <div class="row">
-      <div class="col-sm-2">K</div>
-      <div class="col-sm-2">U</div>
-      <div class="col-sm-2">S</div>
-      <div class="col-sm-2">A</div>
-      <div class="col-sm-2">M</div>
-      <div class="col-sm-2">H</div>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-md">Kale</div>
-      <div class="col-md">Ulex</div>
-      <div class="col-md">Sunflower</div>
-      <div class="col-md">Aloe Vera</div>
-      <div class="col-md">Magnolia</div>
-      <div class="col-md">Hibiscus</div>
+      <div class="col-md-4">
+        <img src="sunflower.jpg" alt="Sunflower" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="aloevera.jpg" alt="Aloe Vera" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="hibiscus.jpg" alt="Hibiscus" class="img-fluid">
+      </div>
     </div>
   </div>
 
-  <hr>
-
-  <p>
-  <strong>Observation:</strong> The plant names row breaks first when resizing the window. <br>
-  <strong>Explanation:</strong> Plant names are longer words than single letters, so their columns require more space. 
-  When the screen gets smaller, these columns wrap earlier than the letters row.
-</p>
-<div class="container my-4">
-  <h2>Plant Images</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <img src="sunflower.jpg" class="img-fluid" alt="Sunflower">
-    </div>
-    <div class="col-md-4">
-      <img src="aloevera.jpg" class="img-fluid" alt="Aloe Vera">
-    </div>
-    <div class="col-md-4">
-      <img src="hibiscus.jpg" class="img-fluid" alt="Hibiscus">
+  <!-- Thumbnails -->
+  <div class="container my-4">
+    <h3>Plant Thumbnails</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="sunflower.jpg" alt="Sunflower" class="img-thumbnail" width="200">
+      </div>
+      <div class="col-md-4">
+        <img src="aloevera.jpg" alt="Aloe Vera" class="img-thumbnail" width="200">
+      </div>
+      <div class="col-md-4">
+        <img src="hibiscus.jpg" alt="Hibiscus" class="img-thumbnail" width="200">
+      </div>
     </div>
   </div>
-</div>
-<div class="container my-4">
-  <h2>Thumbnails</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <img src="sunflower.jpg" class="img-thumbnail" style="max-width: 200px; height: auto;" alt="Sunflower">
-    </div>
-    <div class="col-md-4">
-      <img src="aloevera.jpg" class="img-thumbnail" style="max-width: 200px; height: auto;" alt="Aloe Vera">
-    </div>
-    <div class="col-md-4">
-      <img src="hibiscus.jpg" class="img-thumbnail" style="max-width: 200px; height: auto;" alt="Hibiscus">
+
+  <!-- Table (Part 5) -->
+  <div class="container my-4">
+    <h2>Plant Table</h2>
+    <table class="table table-hover table-striped table-bordered">
+      <caption>Plants, Cities, and Lakes</caption>
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">Plant</th>
+          <th scope="col">City</th>
+          <th scope="col">Lake</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-success">
+          <td>K</td><td>Kale</td><td>Kansas City</td><td>Kenogami</td>
+        </tr>
+        <tr class="table-warning">
+          <td>U</td><td>Ulex</td><td>Utrecht</td><td>Ulubat</td>
+        </tr>
+        <tr class="table-info">
+          <td>S</td><td>Sunflower</td><td>Seattle</td><td>Superior</td>
+        </tr>
+        <tr class="table-primary">
+          <td>A</td><td>Aloe Vera</td><td>Austin</td><td>Albert</td>
+        </tr>
+        <tr class="table-danger">
+          <td>M</td><td>Magnolia</td><td>Miami</td><td>Michigan</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>H</td><td>Hibiscus</td><td>Houston</td><td>Huron</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Buttons and Button Groups (Part 6) -->
+  <div class="container my-4">
+    <h2>Plant Buttons</h2>
+    <div class="btn-toolbar" role="toolbar">
+
+      <!-- Group 1 (3 buttons, success style) -->
+      <div class="btn-group me-2" role="group">
+        <button type="button" class="btn btn-success">S</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">H</button>
+      </div>
+
+      <!-- Group 2 (2 buttons, warning style) -->
+      <div class="btn-group me-2" role="group">
+        <button type="button" class="btn btn-warning">K</button>
+        <button type="button" class="btn btn-warning">U</button>
+      </div>
+
+      <!-- Group 3 (1 button, danger style) -->
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-danger">M</button>
+      </div>
+
     </div>
   </div>
-</div>
-<div class="container my-5">
-  <h2>Plant Table</h2>
-  <table class="table table-bordered table-hover">
-    <caption>Plants, Cities, and Lakes</caption>
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Letter</th>
-        <th scope="col">Plant</th>
-        <th scope="col">City</th>
-        <th scope="col">Lake</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="table-success">
-        <th scope="row">K</th>
-        <td>Kale</td>
-        <td>Kansas City</td>
-        <td>Lake Kariba</td>
-      </tr>
-      <tr class="table-warning">
-        <th scope="row">U</th>
-        <td>Ulex</td>
-        <td>Utrecht</td>
-        <td>Lake Urmia</td>
-      </tr>
-      <tr class="table-warning">
-        <th scope="row">S</th>
-        <td>Sunflower</td>
-        <td>Seattle</td>
-        <td>Lake Superior</td>
-      </tr>
-      <tr class="table-success">
-        <th scope="row">A</th>
-        <td>Aloe Vera</td>
-        <td>Atlanta</td>
-        <td>Lake Albert</td>
-      </tr>
-      <tr class="table-light">
-        <th scope="row">M</th>
-        <td>Magnolia</td>
-        <td>Miami</td>
-        <td>Lake Michigan</td>
-      </tr>
-      <tr class="table-danger">
-        <th scope="row">H</th>
-        <td>Hibiscus</td>
-        <td>Houston</td>
-        <td>Lake Huron</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div class="container my-5">
-  <h2>Plant Buttons</h2>
 
-  <div class="btn-toolbar" role="toolbar" aria-label="Plant button groups">
+  <!-- Form (Part 9) -->
+  <div class="container my-5">
+    <h2>Sign Up Form</h2>
+    <form>
+      <!-- Email group -->
+      <div class="form-group mb-3">
+        <label for="emailInput">Email address</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+        <small class="form-text text-muted">We will never share your email with anyone else.</small>
+      </div>
 
-    <!-- Group 1: 3 buttons (success style) -->
-    <div class="btn-group mr-2" role="group" aria-label="Group 1">
-      <button type="button" class="btn btn-success">S</button>
-      <button type="button" class="btn btn-success">A</button>
-      <button type="button" class="btn btn-success">H</button>
-    </div>
+      <!-- Dessert group -->
+      <div class="form-group mb-3">
+        <label for="dessertInput">Dessert</label>
+        <input type="text" class="form-control" id="dessertInput" placeholder="Enter your favorite dessert">
+      </div>
 
-    <!-- Group 2: 2 buttons (warning style) -->
-    <div class="btn-group mr-2" role="group" aria-label="Group 2">
-      <button type="button" class="btn btn-warning">K</button>
-      <button type="button" class="btn btn-warning">U</button>
-    </div>
+      <!-- Newsletter checkbox -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="newsletterCheck">
+        <label class="form-check-label" for="newsletterCheck">Sign up for newsletter?</label>
+      </div>
 
-    <!-- Group 3: 1 button (danger style) -->
-    <div class="btn-group" role="group" aria-label="Group 3">
-      <button type="button" class="btn btn-danger">M</button>
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Dropdown (Part 7) -->
+  <div class="container my-4">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        More Pages
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+      </ul>
     </div>
   </div>
-</div>
-<div class="container my-5">
-  <h2>Page Selector</h2>
 
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Choose a Page
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="basic.html">Basic Page</a>
-      <a class="dropdown-item" href="advanced.html">Advanced Page</a>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap JS bundle (needed for dropdown to work) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
